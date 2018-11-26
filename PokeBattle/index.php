@@ -19,6 +19,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     require 'Pokemon.php';
     require 'Pikachu.php';
     require 'Charmeleon.php';
+    require 'Attacks.php';
+    require 'Resistance.php';
+    require 'Weakness.php';
     $pikachu = new Pikachu($_POST['PikachuName']);
     print_r('<pre>'. $pikachu . '</pre>');
     $charmeleon = new Charmeleon($_POST['CharmeleonName']);
